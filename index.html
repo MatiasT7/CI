@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Ingredientes</title>
+    <title>Calculadora de Recetas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora de Ingredientes para Brownie de Porotos Negros</h1>
-        <form id="calculator-form">
-            <label for="comensales">Número de comensales:</label>
-            <input type="number" id="comensales" name="comensales" min="1" required>
-            <button type="submit">Calcular</button>
-        </form>
-        <div id="result" class="result"></div>
-    </div>
+    <h1>Calculadora de Recetas</h1>
+    
+    <label for="recetas">Selecciona una receta:</label>
+    <select id="recetas">
+        <option value="brownie">Brownie de Porotos Negros</option>
+        <option value="budin">Budín de Banana</option>
+        <option value="faina">Fainá de Zanahoria</option>
+        <option value="pastaFrola">Pasta Frola</option>
+        <option value="tortaBasica">Torta Básica de Vainilla</option>
+        <option value="tortaCalabaza">Torta de Calabaza</option>
+        <option value="tortaNaranja">Torta de Naranja</option>
+        <option value="panCasero">Pan Casero</option>
+        <option value="panCalabaza">Pan de Calabaza</option>
+        <option value="sconesQueso">Scones de Queso</option>
+        <option value="sconesDulces">Scones Dulces</option>
+        <option value="hummus">Hummus</option>
+        <option value="untableRicota">Untable de Ricota</option>
+        <option value="untableZanahoria">Untable de Zanahoria</option>
+        <option value="galletasAvenaPasas">Galletas de Avena y Pasas</option>
+        <option value="galletasAvenaQueso">Galletas de Avena y Queso</option>
+        <option value="galletitasCitricas">Galletitas Cítricas</option>
+        <option value="ojitosCaseros">Ojitos Caseros</option>
+        <option value="alfajoresMaicena">Alfajores de Maicena</option>
+        <option value="frutosSecos">Frutos Secos</option>
+        <option value="mixFrutosSecos">Mix de Frutos Secos</option>
+        <option value="cremaVainilla">Crema de Vainilla</option>
+        <option value="licuadoLecheFruta">Licuado de Leche y Fruta</option>
+        <option value="ojitosMijo">Ojitos de Mijo</option>
+    </select>
+    
+    <label for="comensales">Cantidad de comensales:</label>
+    <input type="number" id="comensales" min="1">
+    
+    <button id="calcular">Calcular</button>
+    
+    <h2>Ingredientes Necesarios</h2>
+    <div id="resultados"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
